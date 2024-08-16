@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.div-principal{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.div-secundaria{
+   position: relative;
+   text-align: center;
+    
+}
+
+.nomePesonagem{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+  
+    
+}
+.imagem{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.localidade{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.imagem:hover{
+    width: 98%;
+    
+}
+
+@media (max-width: 1000px){
+    .div-principal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px
+    }
+}
+
+@media (max-width: 400px){
+    .div-principal{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px
+    }
+}
+    
+
